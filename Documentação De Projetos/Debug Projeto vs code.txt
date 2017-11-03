@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Gulp task",
+      "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
+      "args": [
+        "task"
+      ]
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "https://dev.credenciado.amil.com.br",
+      "sourceMaps": true,
+      "webRoot": "${workspaceRoot}",
+      "skipFiles":["zone.js", "polyfills.bundle.js", "node_modules/**/*.js", "lib/**/*.js", "build/polyfills.js"],
+      "experimentalSkipFiles":["zone.js", "polyfills.bundle.js", "node_modules/**/*.js", "lib/**/*.js", "build/polyfills.js"]
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "webRoot": "${workspaceRoot}"
+    }
+  ]
+}
