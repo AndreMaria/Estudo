@@ -1,0 +1,1 @@
+# scalatra-getting-started

@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+    application:
+        build: ./amazonlinux
+        environment:
+            - TZ=Asia/Tokyo
+        ports: 
+            - "8080:8080"
+        links: 
+            - database:database
+        volumes:
+            - $PWD/../builds:/var/lib/tomcat8/webapps/
+    database:
+        image: mysql:5.6
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=application
+            - TZ=Asia/Tokyo
+        ports:
+            - "3306:3306"
+        volumes:
+            - $PWD/../migrations:/docker-entrypoint-initdb.d
+
