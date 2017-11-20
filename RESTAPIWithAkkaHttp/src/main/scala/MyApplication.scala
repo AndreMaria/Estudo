@@ -33,6 +33,8 @@ object MyApplication {
     /*Dispatchers implementam a interface ExecutionContext e, portanto, podem ser usados ​​para executar invocações futuras etc.*/
     implicit val executionContext = system.dispatcher
 
+    //Inicia uma isntancia de um ActorRef
+    // RequestHandler representa as propriedades desejadas para o actor
     val requestHandler = system.actorOf(RequestHandler.prop(),"requestHandler")
 
     //Define a rota
@@ -42,12 +44,29 @@ object MyApplication {
 
       path("health") {
         get {
-          onSuccess(requestHandler ? GetHealthRequest ){
-            case response: HealthResponse => complete(StatusCodes.OK, s"Everything is ${response.helath.status}")
+          //No trecho requestHandler ? GetHealthRequest
+          //O ator requestHandler é instanciado e usado para lidar com todos os pedidos da rota
+          //O método (ask) retornará um Future[Any] esse método requer um tempo limite que é usado
+          // para limitar a quantidade de tempo que espera a resposta.
+          //O objeto GetHealthRequest é a mensagem para o ator
+          // Quando este Futuro foi concluído com sucesso, a correspondência de padrões é aplicada à resposta do Ator.
+          // Cada caso na combinação de padrões define como a rota deve ser concluída
+          onSuccess(requestHandler ? GetHealthRequest){
+            case response: HealthResponse => complete(
+              StatusCodes.OK, s"Everything is ${response.helath.status} and ${response.helath.description}")
             case _ => complete(StatusCodes.InternalServerError)
           }
-
         }
+        /*
+        post{
+          entity(as[Health]) { statusReport =>
+            onSuccess(requestHandler ? SetStatusRequest(statusReport)){
+              case response: HealthResponse =>
+                complete(StatusCodes.OK, s"Posted health as ${response.helath.status} !")
+              case _ => complete(StatusCodes.InternalServerError)
+            }
+          }
+        } */
       }
     }
 
