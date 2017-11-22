@@ -9,7 +9,10 @@ object RequestHandler {
   }
 }
 
-case class Health(status: String, description: String)
+case class Health(status: String, description: String){
+  require(status == "Healthy" || status == "Degraded" || status == "Critical" || status == "Unknown",
+    "status must be one of: [\"Healthy\",\"Degraded\",\"Critical\", or \"Unknown\"]")
+}
 case object GetHealthRequest
 case class SetStatusRequest(helath: Health)
 case class HealthResponse(helath: Health)

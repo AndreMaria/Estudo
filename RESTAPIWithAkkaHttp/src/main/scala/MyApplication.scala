@@ -1,4 +1,7 @@
-import akka.actor.ActorSystem //akka-actor
+import akka.actor.ActorSystem
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
+import rest.Health
+import spray.json.DefaultJsonProtocol //akka-actor
 //Os módulos Akka HTTP implementam uma pilha HTTP completa do servidor e do cliente em cima do akka-actor e akka-stream.
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model.StatusCodes
@@ -12,7 +15,14 @@ import scala.concurrent.duration._
 import scala.io.StdIn
 import rest._
 
-object MyApplication {
+// Essa interface corresmponde ao método post
+// A diretiva as[Health] tem um parametro implicito do tipo FromRequestUnmarshaller[T]
+// Assim implementamos jsonFormat2(Health)
+trait HealthJsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
+  implicit val healthFormat = jsonFormat2(Health)
+}
+
+object MyApplication extends HealthJsonSupport{
 
   val host = "localhost"
   val port = 8080
@@ -57,7 +67,6 @@ object MyApplication {
             case _ => complete(StatusCodes.InternalServerError)
           }
         }
-        /*
         post{
           entity(as[Health]) { statusReport =>
             onSuccess(requestHandler ? SetStatusRequest(statusReport)){
@@ -66,7 +75,7 @@ object MyApplication {
               case _ => complete(StatusCodes.InternalServerError)
             }
           }
-        } */
+        }
       }
     }
 
