@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="var" path="USER_HOME/.ivy2/cache/scala_2.12/sbt_1.0/org.jetbrains/sbt-idea-shell/jars/sbt-idea-shell-2017.2.jar"/>
+	<classpathentry kind="output" path="target/idea-classes"/>
+</classpath>
