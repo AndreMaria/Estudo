@@ -1,0 +1,11 @@
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\AppService.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\AppService.pdb
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\Domain.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\Infrastructure.Data.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\EntityFramework.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\Domain.pdb
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\Infrastructure.Data.pdb
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\bin\Release\EntityFramework.xml
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\obj\Release\AppService.csprojResolveAssemblyReference.cache
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\obj\Release\AppService.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\AppService\obj\Release\AppService.pdb

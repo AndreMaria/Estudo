@@ -1,0 +1,14 @@
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Infrastructure.Data.dll.config
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Infrastructure.Data.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Infrastructure.Data.pdb
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Domain.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\EntityFramework.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Oracle.ManagedDataAccess.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\Domain.pdb
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\EntityFramework.xml
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\obj\Release\Infrastructure.Data.csprojResolveAssemblyReference.cache
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\obj\Release\Infrastructure.Data.dll
+C:\Users\AndreMaria\Documents\Visual Studio 2015\Projects\Tutorial.Cubo\Infrastructure.Data\obj\Release\Infrastructure.Data.pdb

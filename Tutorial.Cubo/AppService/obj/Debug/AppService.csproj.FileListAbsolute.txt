@@ -1,0 +1,12 @@
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\AppService.dll
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\AppService.pdb
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\Domain.dll
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\Infrastructure.Data.dll
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\EntityFramework.dll
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\Domain.pdb
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\Domain.xml
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\Infrastructure.Data.pdb
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\bin\Debug\EntityFramework.xml
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\obj\Debug\AppService.csprojResolveAssemblyReference.cache
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\obj\Debug\AppService.dll
+c:\users\andremaria\documents\visual studio 2015\Projects\Tutorial.Cubo\AppService\obj\Debug\AppService.pdb
