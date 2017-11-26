@@ -13,3 +13,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor"  % "2.5.4", // or whatever the latest version is
   "com.typesafe.akka" %% "akka-http-spray-json-experimental" % "2.4.6"
 )
+
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.24"

@@ -1,6 +1,6 @@
 import akka.actor.ActorSystem
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
-import rest.Health
+import rest.{Health}
 import spray.json.DefaultJsonProtocol //akka-actor
 //Os módulos Akka HTTP implementam uma pilha HTTP completa do servidor e do cliente em cima do akka-actor e akka-stream.
 import akka.http.scaladsl.Http
@@ -15,14 +15,19 @@ import scala.concurrent.duration._
 import scala.io.StdIn
 import rest._
 
-// Essa interface corresmponde ao método post
+// Essa interface corresponde ao método post
 // A diretiva as[Health] tem um parametro implicito do tipo FromRequestUnmarshaller[T]
 // Assim implementamos jsonFormat2(Health)
-trait HealthJsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
+trait JsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
   implicit val healthFormat = jsonFormat2(Health)
 }
 
-object MyApplication extends HealthJsonSupport{
+trait UserJsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
+  implicit val userFormat = jsonFormat3(repository.User)
+  implicit val usersFormat = jsonFormat1(repository.Users)
+}
+
+object MyApplication extends JsonSupport with UserJsonSupport{
 
   val host = "localhost"
   val port = 8080
@@ -77,6 +82,18 @@ object MyApplication extends HealthJsonSupport{
           }
         }
       }
+      path("user") {
+        get {
+          entity(as[repository.User]) {
+            userReport =>  onSuccess(requestHandler ? GetUserRequest){
+              case response: UserResponseList =>
+                complete(StatusCodes.OK,s"O login: ${response.users.find( user => user.Id == 1)}")
+              case _ => complete(StatusCodes.InternalServerError)
+            }
+          }
+        }
+      }
+
     }
 
     //Startup, and listen for requests

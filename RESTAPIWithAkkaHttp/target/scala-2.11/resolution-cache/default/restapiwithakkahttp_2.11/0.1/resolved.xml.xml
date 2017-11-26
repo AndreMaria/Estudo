@@ -4,7 +4,7 @@
 		module="restapiwithakkahttp_2.11"
 		revision="0.1"
 		status="integration"
-		publication="20171121091853"
+		publication="20171126104943"
 	>
 		<description>
 		RESTAPIWithAkkaHttp
@@ -36,5 +36,6 @@
 		<dependency org="com.typesafe.akka" name="akka-stream_2.11" rev="2.5.4" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.5.4" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-http-spray-json-experimental_2.11" rev="2.4.6" conf="compile->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.24" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
