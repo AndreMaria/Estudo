@@ -17,15 +17,9 @@ case object GetHealthRequest
 case class SetStatusRequest(helath: Health)
 case class HealthResponse(helath: Health)
 
-case class GetUserRequest(user: repository.User)
-case class SetUserRequest(user: repository.User)
-case class UserResponse(user: repository.User)
-case class UserResponseList(users: Seq[repository.User])
-
 class RequestHandler extends Actor with ActorLogging {
 
   var status : Health = Health("Healthy","Iniciado")
-  var user : repository.User = repository.User(0,"","","","")
 
   def receive :Receive = {
     //Aqui utilizamos o método sender para responder
@@ -35,10 +29,5 @@ class RequestHandler extends Actor with ActorLogging {
     case request: SetStatusRequest =>  log.debug("Update status to {}" ,request.helath)
       status = request.helath
       sender() ! HealthResponse(status)
-    case request: GetUserRequest => log.debug("ocorrendo no ator do User")
-      request.user = UserResponseList(repository.UserRepository.Select("CALL ALL_USERS();",None)).users.head
-      sender() ! UserResponseList(repository.UserRepository.Select("CALL ALL_USERS();",None))
-    case GetUserRequest => log.debug("ocorrendo no ator do User")
-      sender() ! UserResponse(repository.UserRepository.Select("CALL ALL_USERS();",None).head)
   }
 }

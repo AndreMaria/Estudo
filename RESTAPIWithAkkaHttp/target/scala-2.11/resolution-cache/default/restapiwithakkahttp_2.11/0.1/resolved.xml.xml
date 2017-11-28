@@ -4,7 +4,7 @@
 		module="restapiwithakkahttp_2.11"
 		revision="0.1"
 		status="integration"
-		publication="20171126104943"
+		publication="20171127110923"
 	>
 		<description>
 		RESTAPIWithAkkaHttp

@@ -11,26 +11,24 @@ import akka.stream.ActorMaterializer //akka-stream
 import akka.util.Timeout
 import akka.pattern.ask
 import scala.concurrent.duration._
+import spray.json._
 
 import scala.io.StdIn
 import rest._
+
 
 // Essa interface corresponde ao método post
 // A diretiva as[Health] tem um parametro implicito do tipo FromRequestUnmarshaller[T]
 // Assim implementamos jsonFormat2(Health)
 trait JsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
   implicit val healthFormat = jsonFormat2(Health)
+  implicit val userFormmat = jsonFormat2(repository.User)
 }
 
-trait UserJsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
-  implicit val userFormat = jsonFormat3(repository.User)
-  implicit val usersFormat = jsonFormat1(repository.Users)
-}
-
-object MyApplication extends JsonSupport with UserJsonSupport{
+object MyApplication extends JsonSupport{
 
   val host = "localhost"
-  val port = 8080
+  val port = 8081
 
   def main(args: Array[String]): Unit = {
 
@@ -93,7 +91,6 @@ object MyApplication extends JsonSupport with UserJsonSupport{
           }
         }
       }
-
     }
 
     //Startup, and listen for requests
