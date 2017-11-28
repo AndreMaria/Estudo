@@ -9,11 +9,7 @@ object RequestHandlerUser {
   }
 }
 
-case class User(Id: Int, Name: String, Email: String, Login: String, Password: String ){
-  def ConvertTo(): Unit ={
-    Map[User,repository.User]
-  }
-}
+case class User(Id: Int, Name: String, Email: String, Login: String, Password: String )
 case class Users(users:Seq[User])
 
 case object GetUserRequest
@@ -25,14 +21,23 @@ class RequestHandlerUser extends Actor  with ActorLogging {
   override def receive: Receive = {
     case GetUserRequest => log.debug("ocorrendo no ator do User")
       val userList = repository.UserRepository.Select("CALL ALL_USERS();",None).map(User => repository.User)
+      for (user : repository.User <- userList.flatMap()){
+
+
+      }
+      userList.foreach(u => ConvertTo(u))
       for {
         _userList <- userList
-        responseUserList = _userList.map(x=> )
+        responseUserList = _userList.
       } yield responseUserList
       var _user = new User(1,"","","","")
       sender() ! UserResponseList(userList)
     case GetUserRequest => log.debug("ocorrendo no ator do User")
       var user = repository.UserRepository.Select("CALL ALL_USERS();",None).map(User => repository.User).head
       sender() ! UserResponse()
+  }
+
+  def ConvertTo(user: repository.User): Unit ={
+    Map[user.type ,User.type]()
   }
 }
