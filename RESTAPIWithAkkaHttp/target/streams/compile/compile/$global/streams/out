@@ -1,16 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\MyApplication.scala:26:52: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : repository.User.type[0m
-[0m[[0m[31merror[0m] [0m[0m required: (?, ?, ?) => ?[0m
-[0m[[0m[31merror[0m] [0m[0m Note: implicit value userFormat is not applicable here because it comes after the application point and it lacks an explicit result type[0m
-[0m[[0m[31merror[0m] [0m[0m  implicit val userFormat = jsonFormat3(repository.User)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\MyApplication.scala:27:41: could not find implicit value for evidence parameter of type UserJsonSupport.this.JF[Seq[repository.User]][0m
-[0m[[0m[31merror[0m] [0m[0m  implicit val usersFormat = jsonFormat1(repository.Users)[0m
-[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\MyApplication.scala:87:20: could not find implicit value for parameter um: akka.http.scaladsl.unmarshalling.FromRequestUnmarshaller[repository.User][0m
-[0m[[0m[31merror[0m] [0m[0m          entity(as[repository.User]) {[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\rest\RequestHandler.scala:39:20: reassignment to val[0m
-[0m[[0m[31merror[0m] [0m[0m      request.user = UserResponseList(repository.UserRepository.Select("CALL ALL_USERS();",None)).users.head[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[warn] C:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\rest\RequestHandlerUser.scala:25:25: unreachable code
+[warn]     case GetUserRequest => log.debug("ocorrendo no ator do User")
+[warn]                         ^
+[warn] one warning found

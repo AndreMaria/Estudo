@@ -1,5 +1,7 @@
+import Map.{Texto}
 import akka.actor.ActorSystem
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
+import org.w3c.dom.css.CSSValue
 import rest.{Health}
 import spray.json.DefaultJsonProtocol //akka-actor
 //Os módulos Akka HTTP implementam uma pilha HTTP completa do servidor e do cliente em cima do akka-actor e akka-stream.
@@ -22,7 +24,8 @@ import rest._
 // Assim implementamos jsonFormat2(Health)
 trait JsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
   implicit val healthFormat = jsonFormat2(Health)
-  implicit val userFormmat = jsonFormat2(repository.User)
+  //implicit val parameterFormat = jsonFormat1(Parameter)
+  implicit val resultFormat = jsonFormat1(ListTexto)
 }
 
 object MyApplication extends JsonSupport{
@@ -53,7 +56,7 @@ object MyApplication extends JsonSupport{
     //Define a rota
     //É um alias simples para uma função transformando um RequestContext em um Futuro [RouteResult].
     val route : Route = {
-      implicit val timeout = Timeout(15.seconds)
+      implicit val timeout = Timeout(55.seconds)
 
       path("health") {
         get {
@@ -80,12 +83,13 @@ object MyApplication extends JsonSupport{
           }
         }
       }
-      path("user") {
-        get {
-          entity(as[repository.User]) {
-            userReport =>  onSuccess(requestHandler ? GetUserRequest){
-              case response: UserResponseList =>
-                complete(StatusCodes.OK,s"O login: ${response.users.find( user => user.Id == 1)}")
+      path("mapping"){
+        get{
+          parameters("texto".as[String]){(texto) =>
+            onSuccess(requestHandler ? SetMappingRequest(texto)) {
+              case response: MappingResponse => complete(
+                StatusCodes.OK,response.texto.list.toString()
+              )
               case _ => complete(StatusCodes.InternalServerError)
             }
           }

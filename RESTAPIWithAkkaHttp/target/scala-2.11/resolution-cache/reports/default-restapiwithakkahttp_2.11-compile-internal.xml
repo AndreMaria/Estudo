@@ -7,15 +7,15 @@
 		revision="0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20171127110923"/>
+		date="20171205170426"/>
 	<dependencies>
 		<module organisation="mysql" name="mysql-connector-java">
-			<revision name="5.1.24" status="release" pubdate="20150508075540" resolver="public" artresolver="public" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+			<revision name="5.1.24" status="release" pubdate="20150508075540" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
 				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="1105" time="573" location="C:\Users\AndreMaria\.ivy2\cache\mysql\mysql-connector-java\ivy-5.1.24.xml" searched="true" original-local-location="C:\Users\AndreMaria\.ivy2\cache\mysql\mysql-connector-java\ivy-5.1.24.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.pom"/>
+				<metadata-artifact status="no" details="" size="2568" time="0" location="C:\Users\AndreMaria\.ivy2\cache\mysql\mysql-connector-java\ivy-5.1.24.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.pom"/>
 				<caller organisation="default" name="restapiwithakkahttp_2.11" conf="compile-internal, compile, provided, optional" rev="5.1.24" rev-constraint-default="5.1.24" rev-constraint-dynamic="5.1.24" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="mysql-connector-java" type="jar" ext="jar" status="successful" details="" size="846263" time="1356" location="C:\Users\AndreMaria\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.24.jar">
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="846263" time="0" location="C:\Users\AndreMaria\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.24.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar"/>
 					</artifact>
 				</artifacts>
