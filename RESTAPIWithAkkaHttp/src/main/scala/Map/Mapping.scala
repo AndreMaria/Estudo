@@ -32,6 +32,11 @@ object Mapping extends {
     var paragraph : String = " "
     var rest : String = " "
     var i = 0
+
+    val teste :List[Texto] = List()
+
+    teste.foreach(x=> x.length)
+
     array.foreach(x=> {
       if(paragraph.length + x.length < paragraphLegngth){
         paragraph = String.format("%s %s ", paragraph, x.word)

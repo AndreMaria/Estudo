@@ -1,0 +1,1263 @@
+[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/AndreMaria/Documents/GitHub/Estudo/ApiScala/}apiscala...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#apiscala_2.12;1.0[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.12.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@385afadb[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.12.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.12.4] org.scala-lang#scala-library;2.12.4[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http_2.12;10.0.10 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-http_2.12;10.0.10 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-http_2.12;10.0.10[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-http_2.12;10.0.10 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-core_2.12;10.0.10 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-http-core_2.12;10.0.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-http-core_2.12;10.0.10[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-http-core_2.12;10.0.10 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-parsing_2.12;10.0.10 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-parsing_2.12;10.0.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-parsing_2.12;10.0.10[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-parsing_2.12;10.0.10 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-stream_2.12;2.5.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-stream_2.12;2.5.4 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-stream_2.12;2.5.4[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-stream_2.12;2.5.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.12;2.5.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.12;2.5.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.12;2.5.4[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.12;2.5.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.3.1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-java8-compat_2.12;0.8.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.reactivestreams#reactive-streams;1.0.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.reactivestreams#reactive-streams;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.reactivestreams#reactive-streams;1.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.reactivestreams#reactive-streams;1.0.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe#ssl-config-core_2.12;0.2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#ssl-config-core_2.12;0.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#ssl-config-core_2.12;0.2.1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#ssl-config-core_2.12;0.2.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[10.1.0-RC1] com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http_2.12;10.1.0-RC1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-http_2.12;10.1.0-RC1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-http_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-http_2.12;10.1.0-RC1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[10.1.0-RC1] com.typesafe.akka#akka-http_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[10.1.0-RC1] com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[10.1.0-RC1] com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.12;1.3.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-json_2.12;1.3.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-json_2.12;1.3.4[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-json_2.12;1.3.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving mysql#mysql-connector-java;5.1.24 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: mysql#mysql-connector-java;5.1.24 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: mysql#mysql-connector-java;5.1.24[0m
+[0m[[0mdebug[0m] [0m	found mysql#mysql-connector-java;5.1.24 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.0.10->com.typesafe.akka#akka-http-core_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-parsing_2.12;10.0.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.0.10->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.12;2.5.4->org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-java8-compat_2.12;0.8.0->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.4.19 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.0.10->com.typesafe.akka#akka-stream_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe.akka#akka-actor_2.12;2.5.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->org.reactivestreams#reactive-streams;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-stream_2.12;2.5.4->com.typesafe#ssl-config-core_2.12;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->com.typesafe#config;1.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe#ssl-config-core_2.12;0.2.1->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http_2.12;10.0.10 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-stream_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-actor_2.12;2.5.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->com.typesafe.akka#akka-http_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http_2.12;10.1.0-RC1->com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1->com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1->io.spray#spray-json_2.12;1.3.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.12;1.3.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->mysql#mysql-connector-java;5.1.24 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [plugin][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#apiscala_2.12;1.0 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-compiler;2.12.4 [scala-tool->default][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.12.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.12.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.12.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-compiler;2.12.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-compiler;2.12.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-reflect;2.12.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.12.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.12.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.12.4] org.scala-lang#scala-reflect;2.12.4[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-reflect;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.12.4->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-reflect;2.12.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-reflect;2.12.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.12.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.12.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.12;1.0.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.6[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.12;1.0.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-library;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-reflect;2.12.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang#scala-reflect;2.12.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-compiler;2.12.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-compiler;2.12.4 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->jline#jline;2.14.5 [optional->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving jline#jline;2.14.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.14.5 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.14.5[0m
+[0m[[0mdebug[0m] [0m	found jline#jline;2.14.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.12.4->jline#jline;2.14.5 [optional->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#apiscala_2.12;1.0->org.scala-lang#scala-library;2.12.4 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-stream_2.12;2.5.4!akka-stream_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.12;2.5.4!akka-actor_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-http-spray-json_2.12;10.1.0-RC1!akka-http-spray-json_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.24!mysql-connector-java.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.1!reactive-streams.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.2.1!ssl-config-core_2.12.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.3.1!config.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-java8-compat_2.12;0.8.0!scala-java8-compat_2.12.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-http_2.12;10.1.0-RC1!akka-http_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-json_2.12;1.3.4!spray-json_2.12.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-http-core_2.12;10.1.0-RC1!akka-http-core_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-parsing_2.12;10.1.0-RC1!akka-parsing_2.12.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 209ms :: artifacts dl 10ms[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 compile produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 runtime produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 test produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 provided produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 optional produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 compile-internal produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 runtime-internal produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 test-internal produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 plugin produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 sources produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 docs produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 pom produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apiscala_2.12;1.0 scala-tool produced in C:\Users\AndreMaria\Documents\GitHub\Estudo\ApiScala\target\resolution-cache\reports\default-apiscala_2.12-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (209ms resolve - 10ms download)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[33mwarn[0m] [0mThere may be incompatibilities among your library dependencies.[0m
+[0m[[33mwarn[0m] [0mHere are some of the libraries that were evicted:[0m
+[0m[[33mwarn[0m] [0m	* com.typesafe.akka:akka-http_2.12:10.0.10 -> 10.1.0-RC1[0m
+[0m[[33mwarn[0m] [0m	* com.typesafe.akka:akka-stream_2.12:2.4.19 -> 2.5.4[0m
+[0m[[33mwarn[0m] [0m	* com.typesafe.akka:akka-actor_2.12:2.4.19 -> 2.5.4[0m
+[0m[[33mwarn[0m] [0mRun 'evicted' to see detailed eviction warnings[0m
