@@ -1,0 +1,6 @@
+sbt clean
+sbt : clean
+clean
+compile
+runMain
+run

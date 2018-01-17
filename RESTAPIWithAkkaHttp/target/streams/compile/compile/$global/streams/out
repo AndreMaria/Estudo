@@ -1,4 +1,4 @@
-[warn] C:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\rest\RequestHandlerUser.scala:25:25: unreachable code
-[warn]     case GetUserRequest => log.debug("ocorrendo no ator do User")
-[warn]                         ^
-[warn] one warning found
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\AndreMaria\Documents\GitHub\Estudo\RESTAPIWithAkkaHttp\src\main\scala\rest\RequestHandlerUser.scala:25:25: unreachable code[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case GetUserRequest => log.debug("ocorrendo no ator do User")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

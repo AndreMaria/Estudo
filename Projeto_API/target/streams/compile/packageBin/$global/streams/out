@@ -1,0 +1,87 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\projeto_api_2.11-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	repository[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\repository[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\UserModel$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\UserModel$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\SetStatusRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\SetStatusRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\UserResponse$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\UserResponse$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonSupport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\JsonSupport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JsonSupport$class.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\JsonSupport$class.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\UserRepository.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\model\UserRepository.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\UserRepository$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\model\UserRepository$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	repository\HibernateUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\repository\HibernateUtil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\GetHealthRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\GetHealthRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\UserResponse.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\UserResponse.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\Parameters$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\Parameters$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\Parameters.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\Parameters.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\UserModel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\UserModel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	repository\RepositoryBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\repository\RepositoryBase.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\model\User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	repository\HibernateUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\repository\HibernateUtil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9$$anonfun$apply$11.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9$$anonfun$apply$11.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\MensagemResponse$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\MensagemResponse$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\GetHealthRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\GetHealthRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$6$$anonfun$apply$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\RequestUser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\RequestUser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\MensagemResponse.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\MensagemResponse.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\ApiProject$$anonfun$1$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\RequestUser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\RequestUser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\SetStatusRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\SetStatusRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	rest\RequestUser$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\rest\RequestUser$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hibernate.cfg.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\AndreMaria\Documents\Estudo Scala\CRUD\Projeto_API\target\scala-2.11\classes\hibernate.cfg.xml[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
