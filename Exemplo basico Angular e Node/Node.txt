@@ -1,0 +1,142 @@
+/******************[app Node]***************/
+
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+//var routes = require('./routes/index');
+var users = require('./routes/users');
+var _login = require('./routes/login')
+
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/users', users);
+
+//app.use('/', routes); //use é para Collection de métodos
+app.get('/',_login.index); // uso expecífico
+app.post('/api/startlogin', _login.user); //usar esta url '/api/startlogin' no serviço angular
+
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+});
+
+app.listen(3000,'localhost',function(){    console.log('Iniciando servidor');});
+//module.exports = app;
+
+/******************[app Node]***************/
+
+/******************[models Node]***************/
+
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
+    
+var loginSchame = new mongoose.Schema({
+    objectId: ObjectId,
+    logon: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    passWord: { type: String, required: true },
+    status: { type: Boolean, required: true },
+    userId: { type: Number, required: true }
+});
+
+module.exports = mongoose.model('logins',loginSchame);  
+
+/******************[models Node]***************/
+
+
+/******************[routes Node]***************/
+
+/*****************************************/
+var mongoose = require('mongoose');
+var db = mongoose.createConnection('localhost','Tutorial');
+var loginSchema = require('../models/login.js');
+var LoginDB = db.model('logins',loginSchema);
+/*****************************************/
+
+exports.index = function (req,res) {
+   res.render('index',{title:'Login'});
+   console.log('Inicio login **************');
+};
+
+exports.user = function (req,res){
+    console.log('Start login index user');
+    var loginid = req.body;
+
+    LoginDB.find(loginid,'logins',function (err,login) {
+        if(login){
+            res.json(login);
+        }
+        else{
+            res.json({err:true});
+        }
+    });
+};
+
+/******************[routes Node]***************/
+
+/******************[views layout Node]***************/
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/node_modules/angular/angular.js')
+    script(src='/node_modules/angular-resource/angular-resource.js')
+    script(src='/node_modules/angular-route/angular-route.js')
+    script(src='/javascripts/app.js')
+    script(src='/javascripts/service.js')
+    script(src='/javascripts/directives.js')
+    script(src='/javascripts/Controllers/LoginController.js')
+    script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+    script(src='/javascripts/bootstrap.min.js')
+  body(ng-app='tutorial')
+    div.container
+      div(ng-view)
+
+/******************[views layout Node]***************/

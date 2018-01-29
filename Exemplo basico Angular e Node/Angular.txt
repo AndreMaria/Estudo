@@ -1,0 +1,123 @@
+/******************[app angular]***************/
+var app = angular.module('tutorial',['tutorialServiceLogin','ngRoute']);
+app.config(
+[
+    '$routeProvider',
+    function ($routeProvider) {
+        $routeProvider
+        .when('/',{templateUrl:'/partials/Login/index.html' ,controller:'LoginController'})
+        .otherwise({redirectTo: '/'});
+    }
+]);
+/******************[app angular]***************/
+
+/******************[serviço angular]***************/
+angular.module('tutorialServiceLogin',['ngResource'])
+.factory(
+    'loginFactory',
+    function ($http) {
+        return {
+            logIn: function (params) {
+                return $http.post('/api/startlogin',params);
+            }
+        }
+    });
+/******************[serviço angular]***************/
+/******************[controller angular]***************/
+app.controller(
+'LoginController',
+['$scope','loginFactory',
+    function($scope,loginFactory){
+        $scope.ValidarLogin = function () {
+            var login = {};
+            login.email = $scope.email;
+            login.senha = $scope.senha;
+            
+            if(login.email === '' || login.senha === ''){
+                $scope.erroMansagem = 'Os campos email e senha são obrigatórios!';
+            }
+            
+            $scope.userLogin = loginFactory.logIn(login);
+            console.log($scope.userLogin);
+        };
+        
+        $scope.IsEmail = function () {
+            var email = $scope.email; 
+            var myRe = /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+            if(!myRe.test(email)){
+                $scope.errorMensagem = 'E-mail invalido'; 
+            }
+            else{
+                $scope.errorMensagem = '';
+            }
+        };
+    }
+]
+);
+/******************[controller angular]***************/
+
+/******************[directive angular]***************/
+var app = angular.module('tutorial');
+
+app.directive('modalLogin',function () {
+    return {
+        controller : 'LoginController',
+        restrict : 'E',
+        templateUrl : './directives/ModalLogin.html'
+    }
+})
+/******************[directive angular]***************/
+
+<!-- [directive html] -->
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="alert js-Mensagem hidden" role="alert"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="form-group">
+                        <label for="Email">Email address</label>
+                        <input type="text" id="Email" class = "form-control js-EmailLogin"  placeholder="Email" required="autofocus" ng-model="email" ng-change="IsEmail()" />
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <div class="form-group">
+                        <label for="PassWord">Password</label>
+                        <input type="password" id="Senha" class="form-control js-PasswordLogin" placeholder="Password" ng-model="senha" />
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group mt-20 pull-right">
+                    <button type="button" class="btn btn-primary js-Login" ng-click="ValidarLogin()" >Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span id="spnMessage">{{errorMensagem}}</span>
+        </div>
+    </div>
+</div>
+
+<!-- [directive html] -->
+
+<!-- [partials  html] -->
+<modal-login></modal-login>
+<!-- [partials  html] -->

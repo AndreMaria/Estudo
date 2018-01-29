@@ -1,0 +1,88 @@
+PASSO 1 - INSTALANDO O EXPRESS 
+No seu diretório , abra o seu prompt de comando e digite:
+ npm install express-generator -g
+
+PASSO 2 - CRIANDO UM PROJETO EXPRESS
+
+Volte para seu prompt de comando e digite:
+ express <nomeDoProjeto>
+
+PASSO 3 - INSTALAR AS DEPENDÊNCIAS DO ANGULAR
+
+Na pasta public do projeto ,abra o seu prompt de comando e digite:
+ npm init
+ 
+Logo após no mesmo prompt de comando e digite: npm install angular --save
+Logo após no mesmo prompt de comando e digite: npm install angular-route --save
+Logo após no mesmo prompt de comando e digite: npm install angular-resource --save
+
+Volte para seu prompt de comando, cd para o diretório <nomeDoProjeto> e digite isso:
+npm install 
+depois node app.js
+
+PARTE 4 - OK. LEGAL. VAMOS FAZER O "HELLO WORLD!"
+
+No arquivo app.js inclui o seguinte código:
+app.listen(3000,'localhost',function(){    console.log('Iniciando servidor');});
+
+PARTE 5 - APP ANGULAR.
+na pasta public/javascripts adicione um arquivo app.js
+
+Neste arquivo inclua o código 
+var app = angular.module('nome_da_app',['node_do_serviço','ngRoute']);
+
+Logo após devemos configurar as rotas do angular, digite o código:
+app.config(
+[
+    '$routeProvider',
+    function ($routeProvider) {
+        $routeProvider
+        .when('/',{templateUrl:'url_partials.html' ,controller:'nome_do_Controller'})
+        .otherwise({redirectTo: '/'});
+    }
+]);
+
+PARTE 6 - SERVIÇO ANGULAR
+
+na pasta public/javascripts adicione um arquivo services.js
+
+angular.module('nome_do_serviço',['ngResource'])
+.factory(
+    'nome_Factory',
+    function ($resource) {
+        return $resource(
+            'api_nodejs_ou_Caniho_localhost',
+            {},
+            {nome_da_funcao : {method: 'tipo',params: {},isArray: 'bool'}}
+        );
+    }
+);
+
+exemplo 
+angular.module('tutorialServiceLogin',['ngResource'])
+.factory(
+    'loginFactory',
+    function ($http) {
+        return {
+            logIn: function (params) {
+                return $http.post('/api/startlogin',params);
+            }
+        }
+    });
+
+
+
+PASSO 2 - RODANDO MONGOD e MONGO
+
+
+No seu diretório <nomeDoProjeto>, cria um subdiretório chamado data. Então navegue até o diretório C:\Program Files\MongoDB\Server\3.2\bin. Deste diretório, digite o seguinte:
+mongod --dbpath c:\node\nodetest1\data
+
+
+C:\Program Files\MongoDB\Server\3.2\bin
+
+Agora você pode abrir um segundo terminal. Navegue novamente até o diretório de instalação do Mongo, e digite:
+
+mongo
+
+PASSO 5 - LIGANDO O MONGO COM O NODE
