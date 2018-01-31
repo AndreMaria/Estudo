@@ -40,3 +40,15 @@ DELIMITER //
 
 
 Expression of type Option[util.List[_]] doesn´t conform to expected type Option[List[User]]
+
+
+
+DELIMITER //
+    CREATE PROCEDURE InsertUser(nome VARCHAR(300), IN email VARCHAR(300),IN passworld VARCHAR(20))
+        LANGUAGE SQL
+        DETERMINISTIC
+        SQL SECURITY DEFINER
+        BEGIN
+			INSERT INTO Users(name,email,passworld)
+			VALUES(nome,email,passworld)
+        END //

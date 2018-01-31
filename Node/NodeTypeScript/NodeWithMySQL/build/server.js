@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express = require("express");
+var load = require('express-load');
+var app = express();
+var port = process.env.PORT || 3000;
+var user = require('./routes/userRoutes');
+app.use('/user', user);
+load('models').then('controllers').then('routes').into(app);
+app.listen(port, function () { console.log("Listening at http://localhost:" + port + "/"); });

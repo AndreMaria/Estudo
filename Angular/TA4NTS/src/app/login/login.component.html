@@ -1,0 +1,27 @@
+<form [formGroup]="formLogin" (ngSubmit)="metodoSend()">
+  <div>
+    <label>{{mensagem}}</label>
+    <div>
+      <div>
+        <label for="campo_para_validar"></label>
+      </div>
+      <div>
+        <input
+          type="text"
+          id="campo_para_validar"
+          name="campo_para_validar"
+          [(ngModel)]="campo_para_validar"
+          formControlName="campo_para_validar"
+          [class.erro]="isInvalid('campo_para_validar')">
+        <label
+          class="erro"
+          *ngIf="isInvalid('campo_para_validar', 'required')"
+          for="campo_para_validar"
+          >Campo Obrigatório</label>
+      </div>
+    </div>
+    <div>
+      <button type="submit" >Enviar</button>
+    </div>
+  </div>
+</form>
