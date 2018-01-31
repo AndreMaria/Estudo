@@ -1,18 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
+import { Login } from './login';
+import { LoginService } from './login.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  providers: [LoginService]
 })
 export class LoginComponent implements OnInit {
 
   private formLogin: FormGroup;
-  private campo_para_validar: string;
+  private email: string;
+  private senha: string;
   mensagem: string;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder , private service: LoginService) { }
 
   ngOnInit() {
     this.validarForms();
@@ -20,7 +25,8 @@ export class LoginComponent implements OnInit {
 
   private validarForms() {
       this.formLogin = this.formBuilder.group({
-          campo_para_validar: ['', [Validators.required]]
+        email: ['', [Validators.required]],
+        senha: ['', [Validators.required]]
       });
   }
 
@@ -32,7 +38,10 @@ export class LoginComponent implements OnInit {
 
   metodoSend() {
     if (this.formLogin.valid) {
-      this.mensagem = 'Form OK';
+      const login: Login = new Login();
+      login.Email = this.email;
+      login.Senha = this.senha;
+      const response = this.service.getLogin(login);
     } else {
       this.mensagem = 'Form Invalido!';
     }
