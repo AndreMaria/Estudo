@@ -1,0 +1,91 @@
+links de exemplo:
+https://semaphoreci.com/community/tutorials/getting-started-with-protractor-and-cucumber
+https://www.npmjs.com/package/webdriver-manager
+
+1- npm install -g protractor
+2- npm install cucumber --save
+3- npm install --save-dev protractor-cucumber-framework
+4- webdriver-manager update
+5- webdriver-manager start
+6- protractor protractor.conf.js
+
+//protractor.conf.js
+exports.config = {
+  seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+  getPageTimeout: 60000,
+  allScriptsTimeout: 500000,
+  framework: 'custom',
+  // path relative to the current config file
+  frameworkPath: require.resolve('protractor-cucumber-framework'),
+  capabilities: {
+    'browserName': 'chrome'
+  },
+
+  // Spec patterns are relative to this directory.
+  specs: [
+    'features/*.feature'
+  ],
+
+  baseURL: 'http://localhost:8080/',
+
+  cucumberOpts: {
+    require: 'features/step_definitions/stepDefinitions.js',
+    tags: false,
+    format: 'pretty',
+    profile: false,
+    'no-source': true
+  }
+};
+7 create file *.feature
+
+#features/test.feature
+Feature: Running Cucumber with Protractor
+    As a user of Protractor
+    I should be able to use Cucumber
+    In order to run my E2E tests
+
+    Scenario: Protractor and Cucumber Test
+        Given I go to "/"
+        When I add "válido" in the type field and add "Login" in the name field
+        When I click the add button
+        Then I should see my new task in the list
+
+8- npm build 
+9- npm run e2e
+10- create step_definitions
+
+'use strict';
+var { Given, When, Then } = require('cucumber');
+var login = require('../../pages/login-page')
+var loginTemplate = require('../../fixture/login-template')
+
+var chai = require('chai');
+var chaiAsPromised = require('chai-as-promised');
+
+chai.use(chaiAsPromised);
+var expect = chai.expect;
+
+Given(/^I go to "([^"]*)"$/, function (site) {
+  login.entrar.no.site('/');
+});
+
+When(/^I add "([^"]*)" in the type field and add "([^"]*)" in the name field$/, function (type,name) {
+  console.log("[log]:Entrou");
+  var values = loginTemplate.get[type][name];
+  login.dados(values);
+});
+
+When(/^I click the add button$/, function () {
+  login.clicar.no.login();
+});
+
+Then(/^I should see my new task in the list$/, function (done) {
+  expect(login.negado().getText()).to.eventually.be.equal('OK').and.notify(done);
+});
+
+11- npm build 
+12- npm run e2e
+
+
+ 
+ 

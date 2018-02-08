@@ -1,0 +1,21 @@
+<form [formGroup]="fromLogin" (ngSubmit)="isLoginValidate()" class="form-login" >
+  <div> <p> {{mensagem}} </p> </div>
+  <div>
+      <div>
+          <div> <label for="email">Email</label> </div>
+          <div>
+            <input type="text" id="email" name="email" formControlName="email" [(ngModel)]="email" >
+            <label for="email" *ngIf="isInvalid('email','required')" ></label>
+          </div>
+        </div>
+        <div>
+            <div> <label for="password">Password</label> </div>
+            <div><input type="password" id="password" name="password" formControlName="password" [(ngModel)]="password" > </div>
+            <label for="email" *ngIf="isInvalid('password','required')" ></label>
+        </div>
+  </div>
+  <div>
+    <button type="submit" value="Entrar">Entrar</button>
+    <button ngClick="Cancel()">Cancelar</button>
+  </div>
+</form>
