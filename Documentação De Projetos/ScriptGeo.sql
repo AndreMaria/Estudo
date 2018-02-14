@@ -1,0 +1,182 @@
+CREATE TABLE PRINCIPAL
+(
+	ID BIGINT IDENTITY(1,1),
+	TEXTO VARCHAR(2500)
+);
+GO
+
+CREATE TABLE LABEL 
+(
+	ID BIGINT IDENTITY(1,1),
+	ID_PRINCIPAL BIGINT,
+	TEXTO VARCHAR(500),
+	CATEGORY VARCHAR(200)
+);
+GO
+
+CREATE TABLE TAG
+(
+	ID BIGINT IDENTITY(1,1),
+	ID_PRINCIPAL BIGINT,
+	TAG_TEXTO VARCHAR(200),
+	TAG_NORMALIZED VARCHAR(200)
+);
+GO
+
+CREATE PROCEDURE SEARCH_BY_TEXT
+(
+	@SEARCH VARCHAR(200),
+	@DELIMITER CHAR,
+	@TYPE_FILTER VARCHAR(100)
+)
+AS
+BEGIN
+	SET @DELIMITER = ISNULL(@DELIMITER,',')
+
+	CREATE TABLE #SEARCH_RESULT
+	(
+		ID BIGINT,
+		CATEGORY VARCHAR(200),
+		TEXTO VARCHAR(500),
+		TAG_NORMALIZED VARCHAR(200)
+	)
+
+	DECLARE @ARRAY_VALUE VARCHAR(1000)
+	DECLARE @QUERY VARCHAR(MAX) = '-- '
+	DECLARE @DELIMITER_POSITION INT
+	DECLARE @FILTER VARCHAR(1000)
+
+	WHILE PATINDEX('%' + @DELIMITER + '%' , @SEARCH) <> 0 
+	BEGIN
+		SELECT @DELIMITER_POSITION =  PATINDEX('%' + @DELIMITER + '%' ,@SEARCH)
+		SELECT @ARRAY_VALUE = RTRIM(LTRIM(LEFT(@SEARCH, @DELIMITER_POSITION - 1)))
+		
+		SELECT @FILTER = (
+		CASE @TYPE_FILTER
+			WHEN 'EXACT' THEN ' UPPER(GT.[TagNormalized]) = UPPER(''' + @ARRAY_VALUE + ''') '
+			WHEN 'EQUAL' THEN ' UPPER(GT.[TagNormalized]) = UPPER(''' + @ARRAY_VALUE + ''') '
+			WHEN 'Like' THEN ' UPPER(GT.[TagNormalized]) LIKE UPPER(''' + @ARRAY_VALUE + '%'') '
+		END)
+
+		SET @QUERY = '
+		INSERT #SearchResult([Id],[CATEGORY],[TEXTO],[TAG_NORMALIZED])
+		SELECT 
+			P.[Id],
+			L.[CATEGORY],
+			L.[TEXTO],
+			T.[TAG_NORMALIZED]
+		FROM [PRINCIPAL] AS P  WITH (NOLOCK)
+		INNER JOIN [TAG] T  WITH (NOLOCK) ON P.[Id] = T.[ID_PRINCIPAL]
+		LEFT JOIN [LABEL] L  WITH (NOLOCK) ON P.[Id] = L.[ID_PRINCIPAL]
+		WHERE '
+
+		SET @QUERY = @QUERY + @FILTER 
+
+		EXEC (@QUERY)
+
+		SELECT @SEARCH = stuff(@SEARCH, 1, @DELIMITER_POSITION, '')
+	END
+
+	SELECT * FROM #SEARCH_RESULT
+
+END 
+GO
+
+CREATE PROCEDURE SEARCH_BY_TAG
+(
+	@SEARCH VARCHAR(200),
+	@DELIMITER CHAR
+)
+AS
+BEGIN
+
+	DECLARE @TYPE_FILTER VARCHAR(100)
+
+	DECLARE @SEARCH_RESULT TABLE
+	(
+		ID BIGINT,
+		CATEGORY VARCHAR(200),
+		TEXTO VARCHAR(500),
+		TAG_NORMALIZED VARCHAR(200)
+	)
+
+
+	DECLARE @SearchResultRelevance TABLE
+	(
+		    [Id] BIGINT,
+			[ExactRelevance] INT null,
+		    [EqualRelevance] INT null,
+			[LikeRelevance] INT null,
+		    [Category] VARCHAR(200),
+			[Text] VARCHAR(500)
+	)
+
+	/*************** [EXACT] **************/
+	SET @TYPE_FILTER = 'EXACT'
+	DECLARE @ExactTagPoints INT = 100
+
+	INSERT INTO @SEARCH_RESULT
+	EXEC SEARCH_BY_TEXT @SEARCH,@DELIMITER,@TYPE_FILTER
+
+	INSERT INTO @SearchResultRelevance([Id],[ExactRelevance],[Category],[Text])
+	SELECT [Id],Count([Id])*@ExactTagPoints,[CATEGORY],[TEXTO]
+	FROM @SEARCH_RESULT  GROUP BY [Id],[CATEGORY],[TEXTO];
+
+	DELETE FROM @SEARCH_RESULT 
+	/*************** [EXACT] **************/
+
+	/*************** [EQUAL] **************/
+	SET @TYPE_FILTER = 'EQUAL'
+	DECLARE @EqualTagPoints INT = 10
+
+	INSERT INTO @SEARCH_RESULT
+	EXEC SEARCH_BY_TEXT @SEARCH,@DELIMITER,@TYPE_FILTER
+
+	INSERT INTO @SearchResultRelevance([Id],[EqualRelevance],[Category],[Text])
+	SELECT [Id],Count([Id])*@EqualTagPoints,[CATEGORY],[TEXTO]
+	FROM @SEARCH_RESULT  GROUP BY [Id],[CATEGORY],[TEXTO];
+
+	DELETE FROM @SEARCH_RESULT 
+	/*************** [EQUAL] **************/
+
+	/*************** [EQUAL] **************/
+	SET @TYPE_FILTER = 'LIKE'
+	DECLARE @LikeTagPoints INT = 5
+
+	INSERT INTO @SEARCH_RESULT
+	EXEC SEARCH_BY_TEXT @SEARCH,@DELIMITER,@TYPE_FILTER
+
+	INSERT INTO @SearchResultRelevance([Id],[LikeRelevance],[Category],[Text])
+	SELECT [Id],Count([Id])*@LikeTagPoints,[CATEGORY],[TEXTO]
+	FROM @SEARCH_RESULT  GROUP BY [Id],[CATEGORY],[TEXTO];
+
+	DELETE FROM @SEARCH_RESULT 
+	/*************** [EQUAL] **************/
+
+
+	SELECT 
+		result.[Id],
+		result.[ExactRelevance],
+		result.[EqualRelevance],
+		result.[LikeRelevance],
+		result.[Text],
+		result.[Category]
+	FROM
+		(
+			SELECT 
+					SRR.[Id] ,
+					ISNULL(SRR.[ExactRelevance],0) [ExactRelevance],
+					ISNULL(SRR.[EqualRelevance],0) [EqualRelevance],
+					ISNULL(SRR.[LikeRelevance],0) [LikeRelevance],
+					ISNULL([Text],'--') AS [Text],
+					ISNULL([Category],'--') AS [Category],
+					ROW_NUMBER() OVER(ORDER BY SRR.[Id]) AS [SELECTED_ROWS],
+					ROW_NUMBER() OVER(PARTITION BY SRR.[Category] ORDER BY SRR.[Id]) AS TOP_10_SELECTED_ROWS
+			FROM
+				@SearchResultRelevance AS SRR
+		) AS result
+	WHERE
+		result.TOP_10_SELECTED_ROWS  < 11
+	ORDER BY
+		result.[SELECTED_ROWS]
+END
