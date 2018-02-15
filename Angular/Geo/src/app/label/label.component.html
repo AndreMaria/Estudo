@@ -1,0 +1,45 @@
+<form [formGroup]="formLabel" (ngSubmit)="validateLabel()" >
+	<div>
+		<h4>{{mensagem}}</h4>
+	</div>
+    <div>
+    <div>
+        <label for="Id">Id</label>
+      </div>
+      <div>
+        <input type="text" name="Id" id="Id" [(ngModel)]="Label.Id" formControlName="Id" >
+        </div>
+    </div>
+		<div>
+      <div>
+        <label for="Idprincipal">Idprincipal</label>
+      </div>
+			<div>
+				<input type="text" name="Idprincipal" id="Idprincipal" [(ngModel)]="Label.Idprincipal" formControlName="Idprincipal" >
+      </div>
+    </div>
+    <div>
+      <div>
+        <label for="Texto">Texto</label>
+      </div>
+      <div>
+        <input type="text" name="Texto" id="Texto" [(ngModel)]="Label.Texto" formControlName="Texto" >
+      </div>
+    </div>
+      <div>
+        <div>
+          <label for="Category">Category</label>
+        </div>
+        <div>
+          <input type="text" name="Category" id="Category" [(ngModel)]="Label.Category" formControlName="Category" >
+          </div>
+      </div>
+      <div>
+        <div>
+          <button type="submit">Add</button>
+        </div>
+        <div>
+          <button>Cancelar</button>
+        </div>
+      </div>
+</form>

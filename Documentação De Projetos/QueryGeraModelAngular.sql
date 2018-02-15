@@ -11,7 +11,11 @@ begin
 	select 
 		ROW_NUMBER() OVER(partition by T.name ORDER BY T.name),
 		SUBSTRING(T.name,1,1) + LOWER(SUBSTRING(T.name,2,LEN(T.name))),
-		SUBSTRING(C.name,1,1) + LOWER(SUBSTRING(C.name,2,LEN(C.name))),
+		CASE 
+			WHEN  PATINDEX('%' + '-' + '%' , C.name) > 0 THEN  SUBSTRING(REPLACE(C.name,'-',''),1,1) + LOWER(SUBSTRING(REPLACE(C.name,'-',''),2,LEN(REPLACE(C.name,'-',''))))
+			WHEN  PATINDEX('%' + '_' + '%' , C.name) > 0 THEN  SUBSTRING(REPLACE(C.name,'_',''),1,1) + LOWER(SUBSTRING(REPLACE(C.name,'_',''),2,LEN(REPLACE(C.name,'_',''))))
+			ELSE SUBSTRING(C.name,1,1) + LOWER(SUBSTRING(C.name,2,LEN(C.name)))
+		END,
 		case TP.name
 			when 'varchar' then ' string'
 			when 'char' then ' string'

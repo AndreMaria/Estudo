@@ -1,0 +1,29 @@
+<form [formGroup]="formPrincipal" (ngSubmit)="validatePrincipal()" >
+	<div>
+		<h4>{{mensagem}}</h4>
+	</div>
+	<div>
+  <div>
+    <label for="Id">Id</label>
+  </div>
+  <div>
+    <input type="text" name="Id" id="Id" [(ngModel)]="Principal.Id" formControlName="Id" >
+    </div>
+  </div>
+  <div>
+  <div>
+    <label for="Texto">Texto</label>
+  </div>
+  <div>
+    <input type="text" name="Texto" id="Texto" [(ngModel)]="Principal.Texto" formControlName="Texto" >
+    </div>
+  </div>
+  <div>
+    <div>
+      <button type="submit">Add</button>
+    </div>
+    <div>
+      <button>Cancelar</button>
+    </div>
+  </div>
+</form>

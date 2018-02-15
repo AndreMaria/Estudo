@@ -1,0 +1,45 @@
+<form [formGroup]="formTag" (ngSubmit)="validateTag()" >
+	<div>
+		<h4>{{mensagem}}</h4>
+	</div>
+	<div>
+  <div>
+    <label for="Id">Id</label>
+  </div>
+  <div>
+    <input type="text" name="Id" id="Id" [(ngModel)]="Tag.Id" formControlName="Id" >
+    </div>
+  </div>
+  <div>
+  <div>
+    <label for="Idprincipal">Idprincipal</label>
+  </div>
+  <div>
+    <input type="text" name="Idprincipal" id="Idprincipal" [(ngModel)]="Tag.Idprincipal" formControlName="Idprincipal" >
+    </div>
+  </div>
+  <div>
+  <div>
+    <label for="Tagtexto">Tagtexto</label>
+  </div>
+  <div>
+    <input type="text" name="Tagtexto" id="Tagtexto" [(ngModel)]="Tag.Tagtexto" formControlName="Tagtexto" >
+    </div>
+  </div>
+  <div>
+  <div>
+    <label for="Tagnormalized">Tagnormalized</label>
+  </div>
+  <div>
+    <input type="text" name="Tagnormalized" id="Tagnormalized" [(ngModel)]="Tag.Tagnormalized" formControlName="Tagnormalized" >
+    </div>
+  </div>
+  <div>
+    <div>
+      <button type="submit">Add</button>
+    </div>
+    <div>
+      <button>Cancelar</button>
+    </div>
+  </div>
+</form>
