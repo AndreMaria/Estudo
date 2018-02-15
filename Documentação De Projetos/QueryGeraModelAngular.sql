@@ -9,15 +9,15 @@ begin
 
 	insert into @tabelas(id_c, t_name,c_name,c_type)
 	select 
-	ROW_NUMBER() OVER(partition by T.name ORDER BY T.name),
-	T.name, 
-	C.name, 
-	case TP.name
-		when 'varchar' then ' string'
-		when 'char' then ' string'
-		when 'bigint' then ' number'
-		else ': any'
-	end
+		ROW_NUMBER() OVER(partition by T.name ORDER BY T.name),
+		SUBSTRING(T.name,1,1) + LOWER(SUBSTRING(T.name,2,LEN(T.name))),
+		SUBSTRING(C.name,1,1) + LOWER(SUBSTRING(C.name,2,LEN(C.name))),
+		case TP.name
+			when 'varchar' then ' string'
+			when 'char' then ' string'
+			when 'bigint' then ' number'
+			else ': any'
+		end
 	from sys.tables T inner join sys.columns C on T.object_id = c.object_id
 	inner join sys.types TP on C.system_type_id = TP.system_type_id
 	order by T.name;
