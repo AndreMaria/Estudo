@@ -29,3 +29,4 @@
   Then(/^I should see my new task in the list$/, function (done) {
     expect(login.negado().getText()).to.eventually.be.equal('OK').and.notify(done);
   });
+

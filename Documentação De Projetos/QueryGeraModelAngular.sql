@@ -63,14 +63,14 @@ begin
 		WHILE @colun <= @total_colun
 		begin
 			select @c_name = c_name, @c_type = c_type from @tabelas where id_t = @index and id_c = @colun ;
-			set @html = @html + '  private '+ @c_name +': '+ @c_type +';';
+			set @html = @html + '  private '+ LOWER(@c_name) +': '+ @c_type +';';
 
 			set @html = @html + '  get '+ @c_name +'() {'
-			set @html = @html + '		return this.'+ @c_name +';'
+			set @html = @html + '		return this.'+ LOWER(@c_name) +';'
 			set @html = @html + '  }'
 
 			set @html = @html + '  set '+ @c_name +'(value: '+ @c_type +') {'
-			set @html = @html + '    this.'+ @c_name +' = value;'
+			set @html = @html + '    this.'+ LOWER(@c_name) +' = value;'
 			set @html = @html + '  }'
 
 			set @colun = @colun + 1;

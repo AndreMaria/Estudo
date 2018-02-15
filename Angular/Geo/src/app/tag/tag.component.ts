@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+import { Tag } from './tag';
 
 @Component({
   selector: 'app-tag',
@@ -7,9 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TagComponent implements OnInit {
 
-  constructor() { }
+  private formTag: FormGroup;
+  private mensagem: string;
+  private tag: Tag;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.tag = new Tag();
+  }
 
   ngOnInit() {
+    this.isValidate();
+  }
+
+  isValidate() {
+    this.formTag = this.formBuilder.group({
+      Id: ['', Validators.required],
+      Idprincipal: ['', Validators.required],
+      Tagtexto: ['', Validators.required],
+      Tagnormalized: ['', Validators.required],    });
+  }
+
+  validateTag() {
+    if (!this.formTag.invalid) {
+      this.mensagem = 'OK';
+    } else {
+      this.mensagem = 'Os campos são obrigatórios!';
+    }
   }
 
 }

@@ -1,5 +1,5 @@
 <form [formGroup]="formlogin" (ngSubmit)="validateLogin()" >
-  <div><h4>{{mensagem}}</h4></div>
+  <div><p>{{mensagem}}<p></div>
   <div>
     <div><label for="email">Email</label></div>
     <div><input type="text" name="email" id="email" [(ngModel)]="email" formControlName="email" ></div>
