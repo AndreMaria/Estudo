@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Netbiis.Lib.TagAlize</name>
+    </assembly>
+    <members>
+        <member name="T:Netbiis.Lib.TagAlize.Core.Tag">
+            <summary>
+            Object responsible for separating information from a generic text
+            </summary>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.ValidationDelimiter(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetCountType(System.String)">
+            <summary>
+            Get count types char in text.
+            </summary>
+            <param name="text">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns></returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetSearchTagsBasic(System.String)">
+            <summary>
+            Get Search Tags Basic
+            </summary>
+            <param name="text">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns></returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetSearchTagsAll(System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="listSubItens"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetListStandardTags(System.String)">
+            <summary>
+            Prepare search object string containing tags separated by commas
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>Object List StandardTags containing tags separated by commas</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetSubTag(System.String)">
+            <summary>
+            Get possible Sub Tag in Tags existed
+            </summary>
+            <param name="text">String object containing possible tag between char '"'</param>
+            <returns>List object String containing tag between char</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetTypesDelimiter(System.String)">
+            <summary>
+            Get types of delimiters in a given text.
+            </summary>
+            <param name="text">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>List object String containing possible Delimiter</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetPartialTags(System.String,System.Char)">
+            <summary>
+            Get possible partial Tags
+            </summary>
+            <param name="text">Object String containing possible tags separated by character '"'</param>
+            <param name="type">Object Char containing possible character "," "." ";" ":" " "</param>
+            <returns>List object String containing possible partial Tags</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.Core.Tag.GetSearchTags(System.String)">
+            <summary>
+            Get Search Tags
+            </summary>
+            <param name="text">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>List object String</returns>
+        </member>
+        <member name="T:Netbiis.Lib.TagAlize.TagAlize.TagAlize">
+            <summary>
+            Object responsible for separating information from a generic text 
+            </summary>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.PrepareSearchString(System.String,Netbiis.Lib.TagAlize.Model.enLanguage)">
+            <summary>
+            Prepare search object string containing tags separated by commas
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>Object String containing tags separated by commas</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.PrepareSearchStringArray(System.String,Netbiis.Lib.TagAlize.Model.enLanguage)">
+            <summary>
+            Prepare search Array string containing tags
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>Array string containing tags</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.PrepareSearchStringArray2d(System.String,Netbiis.Lib.TagAlize.Model.enLanguage)">
+            <summary>
+            Prepare search Array2D string containing tags
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>Array2D string containing tags. First column = [Tag] and last column = [Normalized]</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.PrepareSearchStringList(System.String,Netbiis.Lib.TagAlize.Model.enLanguage)">
+            <summary>
+            Prepare search List object StandardNormalized containing tags 
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>List object StandardNormalized containing tags. First column = [Tag] and last column = [Normalized]</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.GenerateTags(System.String,Netbiis.Lib.TagAlize.Model.enLanguage)">
+            <summary>
+            Generate Array2D string containing tags
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>Array2D string containing tags. First column = [Tag] and last column = [Normalized]</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.GenerateTags(System.String,Netbiis.Lib.TagAlize.Model.enLanguage,Netbiis.Lib.TagAlize.Model.enAlize)">
+            <summary>
+            Generate Array2D string containing tags and indicating type of operation
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <param name="pType">Enum enAlize Type of operation : [Custom] and [System]</param>
+            <returns>Array2D string containing tags. First column = [Tag] ,column = [Normalized] and last column = [enAlize]</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.ArrayToDataTable(System.String,Netbiis.Lib.TagAlize.Model.enLanguage)">
+            <summary>
+            Generate DataTable containing tags
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <returns>DataTable containing tags. First column = [Tag] and last column = [Normalized]</returns>
+        </member>
+        <member name="M:Netbiis.Lib.TagAlize.TagAlize.TagAlize.ArrayToDataTable(System.String,Netbiis.Lib.TagAlize.Model.enLanguage,Netbiis.Lib.TagAlize.Model.enAlize)">
+            <summary>
+            Generate DataTable containing tags and indicating type of operation
+            </summary>
+            <param name="pSearch">Object String containing possible tags separated by character "," "." ";" ":" " "</param>
+            <param name="pType">Enum enAlize Type of operation : [Custom] and [System]</param>
+            <returns>DataTable containing tags.First column = [Tag] ,column = [Normalized] and last column = [enAlize]</returns>
+        </member>
+    </members>
+</doc>

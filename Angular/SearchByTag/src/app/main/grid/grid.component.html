@@ -1,0 +1,20 @@
+<div class="form-group" *ngIf="list.length > 0" >
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item</th>
+        <th scope="col">Normalized</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list; let i = index"  >
+        <th scope="row">{{i}}</th>
+        <td>{{item.Tag}}</td>
+        <td>{{item.Normalized}}</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

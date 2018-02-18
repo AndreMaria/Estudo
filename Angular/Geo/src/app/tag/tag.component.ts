@@ -12,6 +12,7 @@ export class TagComponent implements OnInit {
 
   private formTag: FormGroup;
   private mensagem: string;
+  private status: boolean;
   private tag: Tag;
 
   constructor(private formBuilder: FormBuilder) {
@@ -33,6 +34,7 @@ export class TagComponent implements OnInit {
   validateTag() {
     if (!this.formTag.invalid) {
       this.mensagem = 'OK';
+      this.status = true;
     } else {
       this.mensagem = 'Os campos são obrigatórios!';
     }

@@ -8,13 +8,21 @@ import { routing } from './app.routing';
 import { LabelComponent } from './label/label.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { TagComponent } from './tag/tag.component';
+import { AutocompliteComponent } from './autocomplite/autocomplite.component';
+import { HomeComponent } from './home/home.component';
+import { PrincipalTagComponent } from './principal/principal.tag/principal.tag.component';
+import { PrincipalLabelComponent } from './principal/principal.label/principal.label.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LabelComponent,
     PrincipalComponent,
-    TagComponent
+    TagComponent,
+    AutocompliteComponent,
+    HomeComponent,
+    PrincipalTagComponent,
+    PrincipalLabelComponent
   ],
   imports: [
     BrowserModule,

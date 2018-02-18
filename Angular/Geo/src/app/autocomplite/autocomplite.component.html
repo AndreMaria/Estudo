@@ -1,0 +1,6 @@
+<div class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="query" (keyup)="onKey($event)">
+</div>
+<div class="dropdown-menu  search-results" *ngIf="list.length > 0">
+  <a *ngFor="let item of list" class="dropdown-item" (click)="onClick(item)">{{item.text}}</a>
+</div>
