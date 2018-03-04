@@ -9,6 +9,8 @@ import { MainComponent } from './main/main.component';
 import { LabelComponent } from './main/label/label.component';
 import { TagComponent } from './main/tag/tag.component';
 import { GridComponent } from './main/grid/grid.component';
+import { ExemploComponent } from './exemplo/exemplo.component';
+import { ItemComponent } from './exemplo/item/item.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { GridComponent } from './main/grid/grid.component';
     MainComponent,
     LabelComponent,
     TagComponent,
-    GridComponent
+    GridComponent,
+    ExemploComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

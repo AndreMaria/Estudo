@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSave()">
+  <div class="form-group">
+    <label for="formGroupExampleInput">New Example</label>
+    <input type="text" class="form-control" id="Text" name="Text" [(ngModel)]="newExemplo">
+  </div>
+  <app-item (outputItem)="onOutputMethodInExample($event)"></app-item>
+  <button type="submit" class="btn btn-primary btn-sm">Save</button>
+  <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+</form>
+<div [class]="typeAlert" role="alert">
+  {{alert}}
+</div>
