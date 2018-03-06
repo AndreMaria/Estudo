@@ -28,6 +28,7 @@ namespace ProvaApi.Controllers
                     SubjectMatter sm = new SubjectMatter();
                     List<TagAlise> listTagAlize = null;
 
+                    sm.Content = entity.Content;
                     sm.Labels = new List<Label>();
                     sm.Labels.Add(new Label() { Title = entity.Label });
                     
