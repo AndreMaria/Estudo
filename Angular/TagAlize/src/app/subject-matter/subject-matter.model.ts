@@ -1,25 +1,28 @@
 import { Label } from './label/label.model';
 import { Tag } from './tag/Tag.model';
+import { Model } from './model';
 
-export class SubjectMatter {
+export class SubjectMatter extends Model {
 
-    private id: number;
-    public get Id() { return this.id; }
-    public set Id(value: number) { this.id = value; }
+    constructor(obj?: any) {
+      super(obj);
 
-    private content: string;
-    public get Content() { return this.content; }
-    public set Content(value: string) { this.content = value; }
-    
-    private status: boolean;
-    public get Status() { return this.status; }
-    public set Status(value: boolean) { this.status = value; }
+      if (this.labels) {
+        this.labels = this.labels.map(item => new Label(item));
+      } else {
+          this.labels = new Array<Label>();
+      }
 
-    private labels: Array<Label>;
-    public get Labels() { return this.labels; }
-    public set Labels(value: Array<Label>) { this.labels = value; }
+      if (this.tags) {
+        this.tags = this.tags.map(item => new Tag(item));
+      } else {
+          this.tags = new Array<Tag>();
+      }
+    }
 
+    public id: number;
+    public content: string;
+    public status: boolean;
+    public labels: Array<Label>;
     public tags: Array<Tag>;
-    public get Tags() { return this.tags; }
-    public set Tags(value: Array<Tag>) { this.tags = value; }
 }

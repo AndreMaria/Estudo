@@ -1,13 +1,11 @@
-export class Label{
-    private id: number;
-    public get Id() { return this.id; }
-    public set Id(value: number) { this.id = value; }
+import { Model } from '../model';
+export class Label  extends Model {
 
-    private title: string;
-    public get Title() { return this.title; }
-    public set Title(value: string) { this.title = value; }
+    constructor(obj?: any) {
+      super(obj);
+    }
 
-    private idSubjectMatter: number;
-    public get IdSubjectMatter() { return this.idSubjectMatter; }
-    public set IdSubjectMatter(value: number) { this.idSubjectMatter = value; }
+    public id: number;
+    public title: string;
+    public idSubjectMatter: number;
 }

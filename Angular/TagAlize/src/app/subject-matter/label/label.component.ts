@@ -19,37 +19,37 @@ export class LabelComponent implements OnInit {
   @Output() createTag = new EventEmitter();
 
   constructor(private formBuilder: FormBuilder, private service: ServiceService) {
-    this.label = new Label(); 
+    this.label = new Label();
   }
 
   ngOnInit() {
     this.validate();
   }
 
-  validate(){
-    if(!this.formSubjectMatter.controls[this.labelControl]){
-      this.formSubjectMatter.addControl(this.labelControl,new FormControl());
+  validate() {
+    if (!this.formSubjectMatter.controls[this.labelControl]) {
+      this.formSubjectMatter.addControl(this.labelControl, new FormControl());
     }
     this.formSubjectMatter.controls[this.labelControl].setValidators(
-      [Validators.required,Validators.max(500),Validators.min(3)]
+      [Validators.required, Validators.max(500), Validators.min(3)]
     );
   }
 
-  onTagAlize(event){
+  onTagAlize(event) {
     let list: Array<Tag> = new Array<Tag>();
     let result =  this.service.GetTagAlize(this.formSubjectMatter.controls[this.labelControl].value);
     result.then((response) => {
-      if(response){
+      if (response) {
         for (let index = 0; index < response.Items.length; index++) {
           const element = response.Items[index];
-          let tag: Tag = new Tag();
-          tag.SimpleText = element.Tag;
-          tag.Normalized = element.Normalized;
+          const tag: Tag = new Tag();
+          tag.simpleText = element.Tag;
+          tag.normalized = element.Normalized;
           list.push(tag);
         }
         this.createTag.emit(list);
       }
-    }).catch((erro)=> {
+    }).catch((erro) => {
       this.createTag.emit(erro);
     });
   }

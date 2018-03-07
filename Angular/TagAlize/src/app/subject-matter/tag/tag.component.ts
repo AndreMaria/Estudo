@@ -19,7 +19,7 @@ export class TagComponent implements OnInit {
   @Input() formSubjectMatter: FormGroup;
   @Input() tagControl: string;
   @Input() smView: SubjectMatterView;
-  
+
   constructor(private service: ServiceService) { }
 
   ngOnInit() {
@@ -27,40 +27,40 @@ export class TagComponent implements OnInit {
   }
 
   validate() {
-    if(!this.formSubjectMatter.controls[this.tagControl]) {
+    if (!this.formSubjectMatter.controls[this.tagControl]) {
       this.formSubjectMatter.addControl(this.tagControl, new FormControl());
     }
-    this.formSubjectMatter.controls[this.tagControl].setValidators([Validators.max(500),Validators.min(3)])
+    this.formSubjectMatter.controls[this.tagControl].setValidators([Validators.max(500), Validators.min(3)] );
   }
 
   onTagAlize(event) {
     let list: Array<Tag> = new Array<Tag>();
-    if(this.textTag) {
+    if (this.textTag) {
       this.smView.Tags.push(this.textTag);
-      this.service.GetTagAlize(this.textTag).then((response)=> {
-        if(response){
+      this.service.GetTagAlize(this.textTag).then((response) => {
+        if (response) {
           for (let index = 0; index < response.Items.length; index++) {
             const element = response.Items[index];
             let tag: Tag = new Tag();
-            tag.SimpleText = element.Tag;
-            tag.Normalized = element.Normalized;
+            tag.simpleText = element.Tag;
+            tag.normalized = element.Normalized;
             this.listTag.push(tag);
           }
         }
       });
     }
-    if(this.textLabel) {
-      this.service.GetTagAlize(this.textLabel).then((response)=> {
-        if(response){
+    if (this.textLabel) {
+      this.service.GetTagAlize(this.textLabel).then((response) => {
+        if (response) {
           for (let index = 0; index < response.Items.length; index++) {
             const element = response.Items[index];
             let tag: Tag = new Tag();
-            tag.SimpleText = element.Tag;
-            tag.Normalized = element.Normalized;
+            tag.simpleText = element.Tag;
+            tag.normalized = element.Normalized;
             this.listTag.push(tag);
           }
         }
       });
-    }  
+    }
   }
 }

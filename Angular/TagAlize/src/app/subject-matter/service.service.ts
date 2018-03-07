@@ -7,14 +7,14 @@ import { SubjectMatterView } from '../subject-matter/subject-matter-view.model';
 @Injectable()
 export class ServiceService {
 
-  private url:string = 'http://localhost:57009/api/';
+  private url: string = 'http://localhost:57009/api/';
 
   constructor(private http: Http) { }
 
-  GetTagAlize(text:string): Promise<any>  {
-    return this.http.get(`${this.url}Util/?text=${text}`).toPromise().then((response)=> {
-      return response.json()
-    }).catch((error)=> {
+  GetTagAlize(text: string): Promise<any>  {
+    return this.http.get(`${this.url}Util/?text=${text}`).toPromise().then((response) => {
+      return response.json();
+    }).catch((error) => {
       console.log(`Error:${error}`);
     });
   }
@@ -24,14 +24,14 @@ export class ServiceService {
     let headers: Headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    let response = new ResponseOptions({
+    let responseOptions = new ResponseOptions({
       headers: headers
     });
 
-    return this.http.post(`${this.url}SubjectMatter`,JSON.stringify(items), new Request(response))
+    return this.http.post(`${this.url}SubjectMatter`, JSON.stringify(items), new Request(responseOptions))
       .subscribe(
-        (response)=> { response.json()}, 
-        (erro)=> { console.log(erro);}
+        (response) => { response.json()},
+        (erro) => { console.log(erro);}
     );
   }
 }

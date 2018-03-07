@@ -4,16 +4,23 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-        {
-        "type": "chrome",
+      {
+        "name": "DebugProtractor",
+        "type": "node",
         "request": "launch",
-        "name": "Launch Chrome against localhost",
-        "url": "http://localhost:4200",
-        "sourceMaps": true,
-        "webRoot": "${workspaceRoot}",
-        "skipFiles":["zone.js", "polyfills.bundle.js", "node_modules/**/*.js", "lib/**/*.js", "build/polyfills.js"],
-        "experimentalSkipFiles":["zone.js", "polyfills.bundle.js", "node_modules/**/*.js", "lib/**/*.js", "build/polyfills.js"]
-        }
+        "program": "C:\\Users\\andremaria\\AppData\\Roaming\\npm\\node_modules\\protractor\\bin\\protractor",
+        "stopOnEntry": false,
+        "args": ["C:\\Users\\AndreMaria\\Documents\\GitHub\\Estudo\\Angular\\TagAlize\\protractor.conf.js", "--baseUrl", "http://localhost:4200"]
+      },
+      {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:4200",
+      "sourceMaps": true,
+      "webRoot": "${workspaceRoot}",
+      "skipFiles":["zone.js", "polyfills.bundle.js", "node_modules/**/*.js", "lib/**/*.js", "build/polyfills.js"],
+      "experimentalSkipFiles":["zone.js", "polyfills.bundle.js", "node_modules/**/*.js", "lib/**/*.js", "build/polyfills.js"]
+      }
     ]
 }

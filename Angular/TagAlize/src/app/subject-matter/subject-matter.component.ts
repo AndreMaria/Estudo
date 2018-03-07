@@ -22,7 +22,8 @@ export class SubjectMatterComponent implements OnInit {
   private listTag: Array<Tag>;
   private textLabel: string = 'Ola!';
 
-  constructor(private formBuilder: FormBuilder, private service: ServiceService) { 
+
+  constructor(private formBuilder: FormBuilder, private service: ServiceService) {
     this.smView = new SubjectMatterView();
     this.smView.Tags = new Array<string>();
   }
@@ -30,32 +31,50 @@ export class SubjectMatterComponent implements OnInit {
   ngOnInit() {
     debugger;
     this.validate();
+    this.printConsole() ;
   }
 
-  validate(){
+  validate() {
     this.formSubjectMatter = this.formBuilder.group({
       Content : ['', Validators.required]
     });
   }
 
-  Save(){
-    if(!this.formSubjectMatter.invalid){
-      
-      let response = this.service.PostSubectMatter(this.smView);
+  printConsole() {
+    debugger;
+    console.log(`Objeto:${SubjectMatterJson.SubjectMatterItems}`);
+    const teste  = SubjectMatterJson.SubjectMatterItems.map( sn => new SubjectMatter(sn));
+    console.log(`Exemplo :[${teste}] ; Exemplo Json:[${JSON.stringify(teste)}]`);
+  }
 
+  Save() {
+    if (!this.formSubjectMatter.invalid) {
+      this.service.PostSubectMatter(this.smView);
       this.alertType = 'alert alert-success';
-      this.message = "OK";
+      this.message = 'OK';
     } else {
       this.alertType = 'alert alert-danger';
-      this.message = "Error";
+      this.message = 'Error';
     }
   }
 
-  onTagAlize(event){
-    if(event){
+  onTagAlize(event) {
+    if (event) {
       this.listTag = event;
-      this.textLabel = this.listTag[0].SimpleText;
-      this.smView.Label = this.listTag[0].SimpleText;
+      this.textLabel = this.listTag[0].simpleText;
+      this.smView.Label = this.listTag[0].simpleText;
     }
   }
 }
+
+export let SubjectMatterJson = {
+  'SubjectMatterItems' : [{
+  'id': 1,
+  'content': 'Ola mundo',
+  'status': false,
+  'labels': [{'id': 1, 'title': 'Exemplo Map', 'idSubjectMatter': 1}],
+  'tags': [{'id': 1, 'simpleText': 'Exemplo Map', 'normalized': 'EXEMPLO MAP', 'idSubjectMatter': 1},
+           {'id': 2, 'simpleText': 'Exemplo', 'normalized': 'EXEMPLO', 'idSubjectMatter': 1},
+           {'id': 3, 'simpleText': 'Map', 'normalized': 'MAP', 'idSubjectMatter': 1}]
+  }]
+};
