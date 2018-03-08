@@ -5,6 +5,7 @@ using ProvaApi.Core.Service;
 using ProvaApi.Models;
 using System.Collections.Generic;
 using ProvaApi.Util;
+using System.Linq.Expressions;
 
 namespace ProvaApi.Controllers
 {
@@ -127,6 +128,7 @@ namespace ProvaApi.Controllers
         public Response<SubjectMatter> RemoveSubjectMatter(long id)
         {
             Response<SubjectMatter> response = new Response<SubjectMatter>();
+            Expression<Func<SubjectMatter, bool>> filter = x => x.Id == 1;
             try
             {
                 if (id > 0)

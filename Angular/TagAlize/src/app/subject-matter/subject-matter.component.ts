@@ -20,7 +20,7 @@ export class SubjectMatterComponent implements OnInit {
   private alertType: string;
   private message: string;
   private listTag: Array<Tag>;
-  private textLabel: string = 'Ola!';
+  private textLabel = 'Ola!';
 
 
   constructor(private formBuilder: FormBuilder, private service: ServiceService) {

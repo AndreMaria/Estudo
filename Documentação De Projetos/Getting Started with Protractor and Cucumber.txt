@@ -1,4 +1,4 @@
-links de exemplo:
+﻿links de exemplo:
 https://semaphoreci.com/community/tutorials/getting-started-with-protractor-and-cucumber
 https://www.npmjs.com/package/webdriver-manager
 
@@ -86,6 +86,6 @@ Then(/^I should see my new task in the list$/, function (done) {
 11- npm build 
 12- npm run e2e
 
-
+para debug 
  
  

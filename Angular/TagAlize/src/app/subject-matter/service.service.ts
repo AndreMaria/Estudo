@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Request, ResponseOptions, Headers, RequestMethod, Jsonp} from '@angular/http';
 import '../../../node_modules/rxjs/add/operator/toPromise';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 
+import { Tag } from './tag/Tag.model';
 import { SubjectMatterView } from '../subject-matter/subject-matter-view.model';
 
 @Injectable()
 export class ServiceService {
 
-  private url: string = 'http://localhost:57009/api/';
+  private url = 'http://localhost:54017/api/';
 
   constructor(private http: Http) { }
 
@@ -19,19 +23,25 @@ export class ServiceService {
     });
   }
 
+  GetTagAlizeObservable(text: string): Observable<Tag[]> {
+    return this.http.get(`${this.url}Util/?text=${text}`)
+            .map( (result) => result.json())
+            .catch(erro => Observable.throw(erro.message));
+  }
+
   PostSubectMatter(items: SubjectMatterView) {
 
-    let headers: Headers = new Headers();
+    const headers: Headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    let responseOptions = new ResponseOptions({
+    const responseOptions = new ResponseOptions({
       headers: headers
     });
 
     return this.http.post(`${this.url}SubjectMatter`, JSON.stringify(items), new Request(responseOptions))
       .subscribe(
-        (response) => { response.json()},
-        (erro) => { console.log(erro);}
+        (response) => { response.json(); },
+        (erro) => { console.log(erro); }
     );
   }
 }

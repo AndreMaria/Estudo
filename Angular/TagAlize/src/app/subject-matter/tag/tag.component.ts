@@ -3,7 +3,7 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
 
 import { Tag } from './Tag.model';
 import { ServiceService } from '../service.service';
-import { SubjectMatterView } from '../subject-matter-view.model'
+import { SubjectMatterView } from '../subject-matter-view.model';
 
 @Component({
   selector: 'app-tag',
@@ -34,14 +34,13 @@ export class TagComponent implements OnInit {
   }
 
   onTagAlize(event) {
-    let list: Array<Tag> = new Array<Tag>();
     if (this.textTag) {
       this.smView.Tags.push(this.textTag);
       this.service.GetTagAlize(this.textTag).then((response) => {
         if (response) {
           for (let index = 0; index < response.Items.length; index++) {
             const element = response.Items[index];
-            let tag: Tag = new Tag();
+            const tag: Tag = new Tag();
             tag.simpleText = element.Tag;
             tag.normalized = element.Normalized;
             this.listTag.push(tag);
@@ -54,7 +53,7 @@ export class TagComponent implements OnInit {
         if (response) {
           for (let index = 0; index < response.Items.length; index++) {
             const element = response.Items[index];
-            let tag: Tag = new Tag();
+            const tag: Tag = new Tag();
             tag.simpleText = element.Tag;
             tag.normalized = element.Normalized;
             this.listTag.push(tag);

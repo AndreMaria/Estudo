@@ -36,8 +36,8 @@ export class LabelComponent implements OnInit {
   }
 
   onTagAlize(event) {
-    let list: Array<Tag> = new Array<Tag>();
-    let result =  this.service.GetTagAlize(this.formSubjectMatter.controls[this.labelControl].value);
+    const list: Array<Tag> = new Array<Tag>();
+    const result =  this.service.GetTagAlize(this.formSubjectMatter.controls[this.labelControl].value);
     result.then((response) => {
       if (response) {
         for (let index = 0; index < response.Items.length; index++) {
@@ -54,3 +54,4 @@ export class LabelComponent implements OnInit {
     });
   }
 }
+

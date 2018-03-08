@@ -104,3 +104,4 @@ C:\Users\AndreMaria\Documents\GitHub\Estudo\API\ProvaApi\ProvaApi\obj\Debug\Prov
 C:\Users\AndreMaria\Documents\GitHub\Estudo\API\ProvaApi\ProvaApi\obj\Debug\ProvaApi.csproj.GenerateResource.Cache
 C:\Users\AndreMaria\Documents\GitHub\Estudo\API\ProvaApi\ProvaApi\obj\Debug\ProvaApi.dll
 C:\Users\AndreMaria\Documents\GitHub\Estudo\API\ProvaApi\ProvaApi\obj\Debug\ProvaApi.pdb
+C:\Users\AndreMaria\Documents\GitHub\Estudo\API\ProvaApi\ProvaApi\obj\Debug\ProvaApi.csprojResolveAssemblyReference.cache
