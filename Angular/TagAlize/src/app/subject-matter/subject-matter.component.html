@@ -11,7 +11,10 @@
             aria-describedby="contentHelp" placeholder="Enter Content" ></textarea>
             <small id="contentHelp" class="form-text text-muted">Content by subject.</small>
         </div>
+
         <app-label [formSubjectMatter]="formSubjectMatter" [labelControl]="Title" (createTag)="onTagAlize($event)" ></app-label>
+
+
         <app-tag [formSubjectMatter]="formSubjectMatter" [smView]="smView" [tagControl]="Tag" [listTag]="listTag" [textLabel]="textLabel" ></app-tag>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
