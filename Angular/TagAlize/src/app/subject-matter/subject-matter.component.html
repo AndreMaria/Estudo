@@ -1,7 +1,8 @@
 <br>
 <div class="container" >
+    <p appHighligth [highlightColor]="color">Highlighted me</p>
     <div [class]="alertType" role="alert">
-        {{message}}
+        <p appHighlight> {{message}} </p>
     </div>
     <form [formGroup]="formSubjectMatter" (ngSubmit)="Save()" >
         <div class="form-group">

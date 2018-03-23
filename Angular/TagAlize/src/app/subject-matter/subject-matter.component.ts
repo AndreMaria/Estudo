@@ -29,7 +29,6 @@ export class SubjectMatterComponent implements OnInit {
   }
 
   ngOnInit() {
-    debugger;
     this.validate();
     this.printConsole() ;
   }
@@ -41,7 +40,6 @@ export class SubjectMatterComponent implements OnInit {
   }
 
   printConsole() {
-    debugger;
     console.log(`Objeto:${SubjectMatterJson.SubjectMatterItems}`);
     const teste  = SubjectMatterJson.SubjectMatterItems.map( sn => new SubjectMatter(sn));
     console.log(`Exemplo :[${teste}] ; Exemplo Json:[${JSON.stringify(teste)}]`);

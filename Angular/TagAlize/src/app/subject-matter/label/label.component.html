@@ -1,9 +1,18 @@
 <div class="input-group mb-3" [formGroup]="formSubjectMatter" >
-  <input type="text" class="form-control" 
-  id="Title" name="Title" [formControlName]="labelControl" [(ngModel)]="label.Title"
-  placeholder="Title" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <input
+    type="text"
+    class="form-control"
+    id="Title"
+    name="Title" [formControlName]="labelControl"
+    [(ngModel)]="label.Title"
+    placeholder="Title"
+    aria-label="Recipient's username"
+    aria-describedby="basic-addon2">
   <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button"(click)="onTagAlize($event)" >Button</button>
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="onTagAlize($event)" >Button</button>
   </div>
 </div>
 <small id="titleHelp" class="form-text text-muted">The text contained in the Label will be transformed into Tags</small>
