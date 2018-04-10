@@ -1,0 +1,166 @@
+#!/bin/bash
+
+function error_exit
+{
+  echo -e "\e[1;31mUps! Something is wrong!\r\nError details: $1\e[0m" 1>&2
+  exit 1
+}
+
+function generate_ssh_keys
+{
+  # generate ssh keys
+  echo "Generating ssh keys..."
+  ssh-keygen -t rsa -b 4096 -C "$email" || error_exit "ssh-keygen error! Aborting"
+}
+
+function set_git_config_user
+{
+  git config --global user.name "$name"
+  git config --global user.email $email
+}
+
+function post_github_keys
+{
+  # adding ssh key to github account
+  echo "Adding public ssh key to your github account..."
+  curl -u $HOST_USER \
+      --data "{\"title\":\"vm_`date +%Y%m%d%H%M%S`\",\"key\":\"`cat ~/.ssh/id_rsa.pub`\"}" \
+      http://github.amil.com.br/api/v3/user/keys || error_exit "curl post to github error! Aborting"
+}
+
+function build_docker_images
+{
+  if [ ! -d /vmspace/workspace/dockers ]; then
+    echo "Checkout dockers..."
+    cd /vmspace/workspace; git clone-repo dockers || error_exit "git clone-repo error! Aborting"
+  fi
+
+  echo "Building docker images..."
+  cd /vmspace/workspace/dockers; ./build-images.sh || error_exit "build-images.sh error! Aborting"
+}
+
+function create_apache_container
+{
+  mkdir -p /vmspace/workspace
+
+  if [ ! -d /vmspace/workspace/apache ]; then
+    echo "Checking out apache repo..."
+    cd /vmspace/workspace; git clone-repo apache || error_exit "git clone-repo error! Aborting"
+  fi
+
+  cd /vmspace/workspace/apache/base
+  docker-run amil/grunt-bower:latest ruby apache_build dev || error_exit "apache_build error! Aborting"
+  cd ..
+
+  docker-build -t amil/apache:1.0 -t amil/apache:latest . || error_exit "docker-build error! Aborting"
+  docker create -v /vmspace/workspace:/app/htdocs -p 80:80 -p 443:443 --name amil-apache amil/apache || error_exit "docker create error! Aborting"
+
+  echo "Starting apache..."
+  docker start amil-apache
+}
+
+function wait_weblogic_startup
+{
+  ADMIN_PORT=7100
+  while :
+  do
+    ADMIN_HOST=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' amil-weblogic)
+    echo "Waiting for WebLogic Admin Server on $ADMIN_HOST:$ADMIN_PORT to become available..."
+    (echo > /dev/tcp/$ADMIN_HOST/$ADMIN_PORT) >/dev/null 2>&1
+    available=$?
+    if [[ $available -eq 0 ]]; then
+      echo "WebLogic Admin Server is now available. Proceeding..."
+      break
+    fi
+    sleep 1
+  done
+}
+
+function create_weblogic_container
+{
+  mkdir -p /vmspace/docker-data/weblogic
+  mkdir -p /vmspace/env
+  mkdir -p /vmspace/workspace
+
+  echo "Creating weblogic container..."
+  docker create  \
+      -v /vmspace/env:/project/env \
+      -v /vmspace/workspace:/project/workspace \
+      -v /vmspace/oracle \
+      -v /vmspace/docker-data/weblogic/logs:/vmspace/oracle/amil_dev/servers/ha_Server/logs/ \
+      -e LC_ALL=en_US.UTF-8 -e LC_TIME="en_US.UTF-8" \
+      -e JAVA_OPTS="$JAVA_OPTS" \
+      -e JAVA_OPTIONS="-Duser.country=BR -Duser.language=pt -Duser.timezone=America/Sao_Paulo -Dweblogic.Stdout=/vmspace/oracle/amil_dev/servers/ha_Server/logs/std.out -Djava.compiler=NONE -Xdebug -agentlib:jdwp=transport=dt_socket,address=8453,server=y,suspend=n" \
+      --name amil-weblogic \
+      -p 7100:7100 -p 8453:8453 amil/weblogic
+
+  echo "Starting weblogic..."
+  docker start amil-weblogic
+
+  if [ ! -d /vmspace/workspace/environment ]; then
+    echo "Checking out environment repo..."
+    cd /vmspace/workspace; git clone-repo environment || error_exit "git clone-repo error! Aborting"
+  fi
+
+  cd /vmspace/workspace/environment/scripts
+
+  wait_weblogic_startup
+
+  docker exec amil-weblogic bash -c "cd /project/workspace/environment/scripts && ./datasources.sh"
+}
+
+function create_selenium_container
+{
+  echo "Creating selenium containers..."
+  docker create --name selenium-hub -p 4444:4444 selenium/hub:2.53.0
+  docker create --name selenium-firefox -p 5900:5900 --link selenium-hub:hub selenium/node-firefox-debug:2.53.0
+  docker create --name selenium-chrome -p 5901:5900 --link selenium-hub:hub selenium/node-chrome-debug:2.53.0
+}
+
+function create_android_adb_container
+{
+  mkdir -p /vmspace/docker-data/.android
+
+  echo "Creating android adb container..."
+  docker create \
+      -v /vmspace/docker-data/.android:/home/vagrant/.android --privileged \
+      -v /vmspace/workspace:/project/workspace \
+      -v /dev/bus/usb:/dev/bus/usb -p 5037:5037 \
+      --name adb amil/android-adb
+}
+
+function create_mail_container
+{
+  echo "Creating mail container..."
+  docker create -p 1080:80 -p 25:25 --name amil-maildev djfarrelly/maildev
+}
+
+echo -e "\e[0;34m*** Amil Post Install ***\e[0m"
+
+
+read -p $'\e[0;34mEnter your name and press [ENTER]: \e[0m' name
+read -p $'\e[0;34mEnter your email and press [ENTER]: \e[0m' email
+
+if [ ! -f ~/.ssh/id_rsa ]; then
+ generate_ssh_keys
+fi
+
+set_git_config_user
+
+post_github_keys
+
+build_docker_images
+
+create_apache_container
+
+create_weblogic_container
+
+create_selenium_container
+
+create_android_adb_container
+
+create_mail_container
+
+echo -e "\e[0;32mYay! amil-post-install script was executed with success.\e[0m"
+
+                                                                                                   1,1           Top
