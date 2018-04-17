@@ -46,6 +46,7 @@ export class SubjectMatterComponent implements OnInit {
   }
 
   Save() {
+    debugger;
     if (!this.formSubjectMatter.invalid) {
       this.service.PostSubectMatter(this.smView);
       this.alertType = 'alert alert-success';
